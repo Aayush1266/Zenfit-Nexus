@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Health Tracking</title>
+        <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../static/css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Redefining Your Fitness</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{url_for('Home')}}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{url_for('get_about')}}">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{url_for('get_contact')}}">Subscribe</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('/static/assets/img/home-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>ZenFit Nexus</h1>
+                            <span class="subheading">Empower Your Body, Elevate Your Mind</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+
+        <div class="container col-xxl-8 px-4 py-1">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="/static/assets/img/side-bar.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <ul>
+                            <h4><l1 style=color: purple">Comprehensive Tracking:</l1></h4>
+                         <p>Easily monitor your fitness journey with our intuitive tracker</p>
+                            <h4><l2 style="color:"purple">Personalized Insights: </l2></h4>
+                         <p>Gain valuable insights into your health and fitness habits. Our tracker analyzes your data to provide personalized recommendations and adjustments tailored to your goals and preferences.
+                            We Set specific health and fitness goals, whether it's losing weight, building muscle, improving endurance, or simply staying active. Track your progress over time and celebrate your achievements along the way.</p>
+                            <h4> <l3 style="color:"purple">Workout Plans and Exercise Library:</l3></h4>
+                            <p>Access a variety of workout plans designed by fitness experts to suit your fitness level and objectives. Explore our extensive exercise library with instructional videos and tips to ensure proper form and technique.</p>
+                        </ul>
+      </div>
+    </div>
+  </div>
+        <div class="container px-4 px-lg-5">
+<!--             <div class="row gx-4 gx-lg-5 justify-content-center">-->
+<!--                   <div class="col-10 col-sm-8 col-lg-6">-->
+<!--        <img src="/static/assets/img/home-bg.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">-->
+<!--      </div>-->
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+<!--                        <ul>-->
+<!--                            <h4><l1 style=color: purple">Comprehensive Tracking:</l1></h4>-->
+<!--                         <p>Easily monitor your fitness journey with our intuitive tracker</p>-->
+<!--                            <h4><l2 style="color:"purple">Personalized Insights: </l2></h4>-->
+<!--                         <p>Gain valuable insights into your health and fitness habits. Our tracker analyzes your data to provide personalized recommendations and adjustments tailored to your goals and preferences.-->
+<!--                            We Set specific health and fitness goals, whether it's losing weight, building muscle, improving endurance, or simply staying active. Track your progress over time and celebrate your achievements along the way.</p>-->
+<!--                            <h4> <l3 style="color:"purple">Workout Plans and Exercise Library:</l3></h4>-->
+<!--                            <p>Access a variety of workout plans designed by fitness experts to suit your fitness level and objectives. Explore our extensive exercise library with instructional videos and tips to ensure proper form and technique.</p>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+                 <div class="container px-4 py-2" id="icon-grid">
+    <h2 class="pb-2 border-bottom">Features</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+ <div class="mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="55" fill="currentColor" class="bi bi-person-walking" viewBox="0 0 16 16">
+  <path d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M6.44 3.752A.75.75 0 0 1 7 3.5h1.445c.742 0 1.32.643 1.243 1.38l-.43 4.083a1.8 1.8 0 0 1-.088.395l-.318.906.213.242a.8.8 0 0 1 .114.175l2 4.25a.75.75 0 1 1-1.357.638l-1.956-4.154-1.68-1.921A.75.75 0 0 1 6 8.96l.138-2.613-.435.489-.464 2.786a.75.75 0 1 1-1.48-.246l.5-3a.75.75 0 0 1 .18-.375l2-2.25Z"/>
+  <path d="M6.25 11.745v-1.418l1.204 1.375.261.524a.8.8 0 0 1-.12.231l-2.5 3.25a.75.75 0 1 1-1.19-.914zm4.22-4.215-.494-.494.205-1.843.006-.067 1.124 1.124h1.44a.75.75 0 0 1 0 1.5H11a.75.75 0 0 1-.531-.22Z"/>
+</svg>
+        </div>
+          <div class="mx-lg-2">
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Calorie Burn Tracking</h3>
+          <p>Monitor calorie expenditure for fitness goals with dedicated tracking tools.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+ <div class="mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="55" fill="currentColor" class="bi bi-egg" viewBox="0 0 16 16">
+  <path d="M8 15a5 5 0 0 1-5-5c0-1.956.69-4.286 1.742-6.12.524-.913 1.112-1.658 1.704-2.164C7.044 1.206 7.572 1 8 1s.956.206 1.554.716c.592.506 1.18 1.251 1.704 2.164C12.31 5.714 13 8.044 13 10a5 5 0 0 1-5 5m0 1a6 6 0 0 0 6-6c0-4.314-3-10-6-10S2 5.686 2 10a6 6 0 0 0 6 6"/>
+</svg>
+        </div>
+          <div class="mx-lg-2">
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Nutrient Intake Tracking</h3>
+          <p>Monitor nutrient consumption for health goals using dedicated tracking tools.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+ <div class="mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="55" fill="currentColor" class="bi bi-person-arms-up" viewBox="0 0 16 16">
+  <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+  <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"/>
+</svg>
+        </div>
+          <div class="mx-lg-2">
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Excercise Recommendation</h3>
+          <p>Tailored workout suggestions for fitness goals for different muscles.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+         <div class="mb-2">
+           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="55" fill="currentColor" class="bi bi-hand-index-thumb" viewBox="0 0 16 16">
+  <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 0 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 1 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.118a.5.5 0 0 1-.447-.276l-1.232-2.465-2.512-4.185a.517.517 0 0 1 .809-.631l2.41 2.41A.5.5 0 0 0 6 9.5V1.75A.75.75 0 0 1 6.75 1M8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v6.543L3.443 6.736A1.517 1.517 0 0 0 1.07 8.588l2.491 4.153 1.215 2.43A1.5 1.5 0 0 0 6.118 16h6.302a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5 5 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.6 2.6 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046zm2.094 2.025"/>
+</svg>
+        </div>
+        <div class="mx-lg-2">
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Easy to Use and Manage</h3>
+          <p>User-friendly interface and simple access.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+    <div class="mb-2">
+           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="55" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
+        </div>
+          <div class="mx-lg-2">
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Whatsapp Chatbot Interface</h3>
+          <p>Simplified, intuitive layout for seamless communication and easy interaction.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="55" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+  <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/></svg>
+        </div>
+        <div class="mx-lg-2">
+          <h3 class="fw-bold mb-1 ml-5 mx-7 fs-4 text-body-emphasis">Weekly/Monthly Reports</h3>
+          <p>Detailed summaries of monthly and weekly activities for personal analysis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                 <div class="card text-bg-light text-center p-3">
+        <figure class="mb-0">
+          <blockquote class="blockquote">
+            <p>Zenfit Nexus is not just a fitness tracker; it's a holistic wellness companion designed to empower you on your fitness journey. With its blend of cutting-edge technology and user-friendly features, this user interface aims to inspire and support you in achieving your health and fitness aspirations.
+                            Elevate your wellness experience with Zenfit Nexus and embark on a journey towards a healthier, more active lifestyle</p>
+          </blockquote>
+        </figure>
+      </div>
+
+                </div>
+        </div>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../static/js/scripts.js"></script>
+    </body>
+</html>
